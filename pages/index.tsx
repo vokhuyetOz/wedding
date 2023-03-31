@@ -22,7 +22,7 @@ import { AlBum } from "../src/components/AlBum/AlBum";
 if (typeof window === "undefined") React.useLayoutEffect = () => {};
 
 const Home: NextPage = () => {
-  const title = "Hung & Huyen";
+  const title = "Hung 💕 Huyen";
   const description =
     "This is my our pleasure that you are coming to our wedding";
 
