@@ -4021,6 +4021,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lodash@npm:^4.17.21":
+  version: 4.17.21
+  resolution: "lodash@npm:4.17.21"
+  checksum: eb835a2e51d381e561e508ce932ea50a8e5a68f4ebdd771ea240d3048244a8d13658acbd502cd4829768c56f2e16bdd4340b9ea141297d472517b83868e677f7
+  languageName: node
+  linkType: hard
+
 "loose-envify@npm:^1.1.0, loose-envify@npm:^1.4.0":
   version: 1.4.0
   resolution: "loose-envify@npm:1.4.0"
@@ -4675,6 +4682,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-fast-compare@npm:^3.2.0":
+  version: 3.2.1
+  resolution: "react-fast-compare@npm:3.2.1"
+  checksum: 209b4dc3a9cc79c074a26ec020459efd8be279accaca612db2edb8ada2a28849ea51cf3d246fc0fafb344949b93a63a43798b6c1787559b0a128571883fe6859
+  languageName: node
+  linkType: hard
+
 "react-is@npm:^16.13.1":
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
@@ -4700,6 +4714,18 @@ __metadata:
     react: ^16.8.0-0 || >=17.0.1 || ^18.0.0
     react-dom: ^16.8.0-0 || >=17.0.1 || ^18.0.0
   checksum: 93473851d7af2eb6c09c4b545e6215b46feb280ba557f5dba78106536aab1da9b42677bb15fcf02ea71f2936caa13d4a8e61fd6cf090f85928396c26ee972fde
+  languageName: node
+  linkType: hard
+
+"react-snowfall@npm:^1.2.1":
+  version: 1.2.1
+  resolution: "react-snowfall@npm:1.2.1"
+  dependencies:
+    react-fast-compare: ^3.2.0
+  peerDependencies:
+    react: ^16.8 || 17.x || 18.x
+    react-dom: ^16.8 || 17.x || 18.x
+  checksum: 297ca9846611cbf2e013298def259486e489c9d56918f7b38e67e22e35e7900d3987e44d9115f8ba6e009aa0c6e9aeaf1aeec02b5fd1c7aa82538a94dcb433f6
   languageName: node
   linkType: hard
 
@@ -5468,12 +5494,14 @@ __metadata:
     classnames: ^2.3.1
     eslint: 8.23.0
     eslint-config-next: 12.3.0
+    lodash: ^4.17.21
     next: 12.3.0
     react: 18.2.0
     react-device-detect: ^2.2.2
     react-dom: 18.2.0
     react-photo-album: ^2.0.3
     react-scroll-parallax: ^3.3.1
+    react-snowfall: ^1.2.1
     sass: ^1.54.9
     typescript: 4.8.3
     yet-another-react-lightbox: ^3.2.0

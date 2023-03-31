@@ -11,3 +11,4 @@ export { Layout } from "./Layout/Layout";
 export { Hashtag } from "./Hashtag/Hashtag";
 
 export { Music } from "./music/music";
+export { Bubbles } from "./Bubbles/Bubbles";
