@@ -94,7 +94,7 @@ export const MapChurch = () => {
       // place="Iglesia San José de Manga"
       // info="18:30 puntual"
       alt="HUYEN"
-      image="/main/maps/huyen.JPG"
+      image="/main/maps/huyen.jpeg"
       // url={urls.church}
     />
   );
@@ -111,7 +111,7 @@ export const MapEvent = () => {
       // info="Salón Los Olivos"
       alt="HUNG"
       // url={urls.party}
-      image="/main/maps/hung.JPG"
+      image="/main/maps/hung.jpeg"
     />
   );
 };

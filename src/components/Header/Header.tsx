@@ -26,7 +26,7 @@ export const Header = () => {
   }
   let image = "/main/header/header_banner.jpeg";
   if (isMobile) {
-    image = "/main/header/header_banner_v.JPG";
+    image = "/main/header/header_banner_v.jpeg";
   }
   return (
     <>
