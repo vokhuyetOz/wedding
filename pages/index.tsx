@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-sync-scripts */
 import type { NextPage } from "next";
+import React from "react";
 import Head from "next/head";
 import {
   Header,
@@ -18,7 +19,7 @@ import {
 import { ParallaxProvider } from "react-scroll-parallax";
 import styles from "../styles/Home.module.css";
 import { AlBum } from "../src/components/AlBum/AlBum";
-import Script from "next/script";
+if (typeof window === "undefined") React.useLayoutEffect = () => {};
 
 const Home: NextPage = () => {
   const title = "Hung & Huyen";

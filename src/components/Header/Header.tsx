@@ -63,7 +63,7 @@ export const Header = () => {
               <span style={{ fontFamily: "AngelaWhite", fontSize }}>Hung</span>
               <span style={{ fontFamily: "AngelaWhite", fontSize: subSize }}>
                 {" "}
-                and{" "}
+                💕{" "}
               </span>
               <span style={{ fontFamily: "AngelaWhite", fontSize }}>Huyen</span>
             </div>

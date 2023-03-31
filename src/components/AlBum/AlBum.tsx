@@ -55,18 +55,18 @@ export const AlBum = () => {
       <PhotoAlbum
         photos={photos}
         layout="rows"
-        // targetRowHeight={150}
+        targetRowHeight={200}
         onClick={({ index }) => setIndex(index)}
         // renderPhoto={NextJsImage}
       />
-      <Lightbox
+      {/* <Lightbox
         slides={slides}
         open={index >= 0}
         index={index}
         close={() => setIndex(-1)}
         // enable optional lightbox plugins
-        plugins={[Fullscreen, Slideshow, Thumbnails, Zoom]}
-      />
+        // plugins={[Thumbnails, Zoom]}
+      /> */}
     </div>
   );
 };
