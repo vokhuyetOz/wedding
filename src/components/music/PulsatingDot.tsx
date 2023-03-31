@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./PulsatingDot.module.scss";
 import MusicIcon from "../../../public/main/music/icon.svg";
 
-export function PulsatingDot({ muted }: { muted: boolean }) {
+export function PulsatingDot({ muted }: { muted?: boolean }) {
   let style;
   if (!muted) {
     style = styles.circle;

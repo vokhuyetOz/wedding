@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import ReactAudioPlayer from "react-audio-player";
+import React, { useRef, useState } from "react";
 
 import { PulsatingDot } from "./PulsatingDot";
 
 export function Music() {
   const [muted, setMuted] = useState(true);
+  const audioRef = useRef<HTMLAudioElement>(null);
 
   return (
     <div
@@ -13,37 +13,31 @@ export function Music() {
         bottom: "6%",
         left: "8%",
       }}
-      onClick={() => setMuted(!muted)}
+      onClick={() => {
+        setMuted(!muted);
+        audioRef.current?.play?.();
+      }}
     >
-      {/* <ReactAudioPlayer
-        style={{ visibility: "hidden" }}
-        volume={1.0}
-        src="ido.mp3"
-        autoPlay={true}
-        controls={false}
-        loop={true}
-        muted={muted}
-        onCanPlay={() => {
-          console.log("onCanPlay");
-        }}
-        onEnded={() => {
-          console.log("onEnded");
-        }}
-        onError={(e) => {
-          console.log("e", e);
-        }}
-        onLoadedMetadata={(e) => {
-          console.log("onLoadedMetadata", e);
-        }}
-      /> */}
       <audio
+        muted={muted}
+        ref={audioRef}
         src="/main/ido.mp3"
-        controls={false}
+        controls={true}
         autoPlay={true}
         playsInline
         loop={true}
         style={{ width: 0, height: 0 }}
       />
+      {/* <iframe
+        src="/main/ido.mp3"
+        allow="autoplay"
+        id="audio"
+        style={{
+          width: 0,
+          height: 0,
+        }}
+      ></iframe> */}
+
       <PulsatingDot muted={muted} />
     </div>
   );

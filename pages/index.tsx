@@ -28,7 +28,7 @@ const Home: NextPage = () => {
         <title>{title}</title>
         <meta name="description" content={description} />
         <link rel="icon" href="/favicon.ico" />
-        <meta property="og:url" content="http://localhost:3000/" />
+        <meta property="og:url" content="https://hung-huyen.vercel.app/" />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:type" content="website" />
