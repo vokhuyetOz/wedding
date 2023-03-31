@@ -4,13 +4,13 @@ const breakpoints = [
 
 const unsplashPhotos = [
   { id: "/main/album/1.JPG", width: 6720, height: 4480 },
-  { id: "/main/album/2.JPG", width: 4480, height: 6720 },
+  { id: "/main/album/2.jpeg", width: 4480, height: 6720 },
   { id: "/main/album/3.jpg", width: 6720, height: 4480 },
   { id: "/main/album/4.JPG", width: 4480, height: 6720 },
   { id: "/main/album/5.jpg", width: 4320, height: 6480 },
   { id: "/main/album/6.JPG", width: 6720, height: 4480 },
   { id: "/main/album/7.JPG", width: 4480, height: 6720 },
-  { id: "/main/album/8.JPG", width: 4480, height: 6720 },
+  { id: "/main/album/8.jpeg", width: 4480, height: 6720 },
   { id: "/main/album/9.jpg", width: 4480, height: 6720 },
   { id: "/main/album/10.jpg", width: 4480, height: 6720 },
   { id: "/main/album/11.jpg", width: 4385, height: 6577 },
