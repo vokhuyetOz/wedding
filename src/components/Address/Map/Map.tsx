@@ -1,4 +1,3 @@
-import { url } from "inspector";
 import Image from "next/image";
 import React, { FC } from "react";
 import { usePlatform } from "../../../hooks/usePlatform";
@@ -76,13 +75,6 @@ const PlaceDesktop: FC<PlaceProps> = ({
       </div>
     </div>
   );
-};
-
-const urls = {
-  church:
-    "https://www.google.com/maps/place/Capilla+San+Jos%C3%A9+de+Manga,+Montevideo/@-34.7892886,-56.0781287,17z/data=!3m1!4b1!4m5!3m4!1s0x95a0290654444c2b:0x69d3db5709d7124d!8m2!3d-34.7892886!4d-56.0781287",
-  party:
-    "https://www.google.com/maps/place/Regency+Park+Hotel/@-34.7893193,-56.0795449,17z/data=!3m1!4b1!4m8!3m7!1s0x95a02907b4b2c91b:0x2f827123d1f24eb1!5m2!4m1!1i2!8m2!3d-34.7893193!4d-56.0795449",
 };
 
 export const MapChurch = () => {
