@@ -26,7 +26,7 @@ export function Music() {
         autoPlay={true}
         playsInline
         loop={true}
-        style={{ width: 0, height: 0 }}
+        style={{ width: 0, height: 0, opacity: 0 }}
       />
       {/* <iframe
         src="/main/ido.mp3"
