@@ -5,12 +5,12 @@ import { usePlatform } from "../../../hooks/usePlatform";
 import styles from "./Map.module.scss";
 
 type PlaceProps = {
-  header: string;
-  place: string;
-  info: string;
+  header?: string;
+  place?: string;
+  info?: string;
   image: string;
-  alt: string;
-  url: string;
+  alt?: string;
+  url?: string;
 };
 
 const PlaceMobile: FC<PlaceProps> = ({
