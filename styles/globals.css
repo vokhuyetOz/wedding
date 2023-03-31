@@ -1,0 +1,81 @@
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Noto", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: #3a3b3c;
+    background: #f9f5f2;
+  }
+}
+
+
+@font-face {
+  font-family: "AngelaWhite";
+  src: url('../fonts/angela/Angella\ White.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Noto";
+  src: url('../fonts/noto/NotoSerifDisplay-Light.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "kba";
+  src: url('../fonts/kbanavoxlost/Kbanavoxlost-gajq.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+.flip-countdown-title {
+  color: #3a3b3c;
+  font-family: "AngelaWhite";
+  font-size: 40px !important;
+}
+
+.flip-countdown-card {
+  font-family: "Noto";
+}
+
+@media only screen and (max-width: 900px) {
+  .flip-countdown {
+    display: flex !important;
+  }
+
+  .flip-countdown-piece {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+  }
+  .flip-countdown-title {
+    color: #3a3b3c;
+    font-size: 28px !important;
+  }
+  
+  .flip-countdown-card {
+    font-family: "Noto";
+  }
+
+  /* .flip-countdown.size-small .flip-countdown-piece {
+    margin: 0 1.15em !important;
+  } */
+}

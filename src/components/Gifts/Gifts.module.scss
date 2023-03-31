@@ -1,0 +1,128 @@
+@import '../../../styles/variables.scss';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 90px;
+
+    h1 {
+        font-family: 'AngelaWhite';
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 68px;
+        color: $font;
+        text-align: center;
+        border-bottom: 1px solid $font;
+    }
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.banks {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-around;
+    min-width: 80vw;
+}
+
+.header {
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 30px !important;
+    font-family: 'AngelaWhite';
+    margin: 10px 0;
+    align-self: center;
+    margin-bottom: 30px;
+}
+
+.bankAccountContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding-bottom: 25px;
+
+    &:last-child {
+        border: none;
+    }
+
+    span {
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+
+.sameBank {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.data {
+    h2 {
+        margin-bottom: 50px;
+        text-align: center;
+        font-family: NoTo;
+    }
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.account {
+    display: flex;
+    min-width: 450px;
+    justify-content: space-around;
+}
+
+
+@media only screen and (max-width: 847px) {
+    .container {
+        padding: 90px 10px;
+
+        h1 {
+            border: none;
+        }
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .banks {
+        gap: 0;
+        display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            min-width: 80vw;
+    }
+
+    .data {
+        h2 {
+            padding-bottom: 10px !important;
+            border-bottom: 1px solid #3d3a3b;
+            margin-bottom: 30px;
+        }
+    }
+
+
+    .sameBank {
+        flex-direction: column;
+        padding: 10px 0 50px 0;
+        margin: 0;
+        border-radius: 4px;
+    }
+
+    .account {
+        min-width: fit-content;
+        flex-direction: column;
+    }
+}

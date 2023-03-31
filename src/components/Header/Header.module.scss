@@ -1,0 +1,126 @@
+@import '../../../styles/variables.scss';
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    
+}
+
+.header {
+    font-family: "AngelaWhite";
+    font-size: 25px;
+}
+
+.spaceTop {
+    width: 435px;
+    height: 435px;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.space {
+    width: 435px;
+    height: 435px;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.space {
+    width: 435px;
+    height: 435px;
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.names {
+    grid-column: 2;
+    grid-row: 2;
+    // position: relative;
+    // top: 180px;
+    justify-self: center;
+}
+
+.itemTopRight {
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: flex-end;
+}
+
+.itemTopLeft {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: flex-start;
+
+}
+
+.itemBottomRight {
+    grid-column: 3;
+    grid-row: 3;
+    justify-self: flex-end;
+}
+
+.itemBottomLeft {
+    grid-column: 1;
+    justify-self: flex-start;
+    grid-row: 3;
+}
+
+.hide {
+    display: none;
+}
+
+
+@media only screen and (max-width: $tabletScreen) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .namesContainer {
+        height: 250px;
+    }
+
+    .names {
+        display: flex;
+        align-self: center;
+        transform: scale(0.8);
+        top: 0;
+    }
+
+    .itemTopRight {
+        display: flex;
+        align-self: flex-end;
+    }
+
+    .itemBottomLeft {
+        display: flex;
+
+    }
+}
+
+@media only screen and (max-width: $portraitPhoneScreen) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .names {
+        display: flex;
+        align-self: center;
+        transform: scale(0.7);
+        top: 0;
+    }
+
+    .itemTopRight {
+        display: flex;
+        align-self: flex-end;
+    }
+
+    .itemBottomLeft {
+        display: flex;
+
+    }
+}
