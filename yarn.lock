@@ -4626,7 +4626,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.8.1":
+"prop-types@npm:^15.7.2, prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -4644,17 +4644,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"qr.js@npm:0.0.0":
-  version: 0.0.0
-  resolution: "qr.js@npm:0.0.0"
-  checksum: 5ac6c393967bdeaa660e7fd3a501a25eb538c1f6008a4d30ab2b97bbe520e5c236530090773f1578aa0a523cdaa6923c866615e21143f9e7cd22abd41c789b69
-  languageName: node
-  linkType: hard
-
 "queue-microtask@npm:^1.2.2":
   version: 1.2.3
   resolution: "queue-microtask@npm:1.2.3"
   checksum: b676f8c040cdc5b12723ad2f91414d267605b26419d5c821ff03befa817ddd10e238d22b25d604920340fd73efd8ba795465a0377c4adf45a4a41e4234e42dc4
+  languageName: node
+  linkType: hard
+
+"react-audio-player@npm:^0.17.0":
+  version: 0.17.0
+  resolution: "react-audio-player@npm:0.17.0"
+  dependencies:
+    prop-types: ^15.7.2
+  peerDependencies:
+    react: ">=16"
+    react-dom: ">=16"
+  checksum: 03042c6ed663dda5d18cae4f399daa53078deed8f34b1b9f2f634bbc168ee7f4e73686f494c88f3091c534fa90af922bc85d80f081af02e0335782557a4a8715
   languageName: node
   linkType: hard
 
@@ -4695,22 +4700,6 @@ __metadata:
   peerDependencies:
     react: ">=16.8.0"
   checksum: 3d6aa4a8da5dfa9011cf9bd8f62b3a45b61911df7fe100bb50672c2fcac5826d4dba5371dcf9aa7eee3731daf6a7fde8473b7b2143e65abe341d8727d10e6b9c
-  languageName: node
-  linkType: hard
-
-"react-qr-code@npm:^2.0.11":
-  version: 2.0.11
-  resolution: "react-qr-code@npm:2.0.11"
-  dependencies:
-    prop-types: ^15.8.1
-    qr.js: 0.0.0
-  peerDependencies:
-    react: ^16.x || ^17.x || ^18.x
-    react-native-svg: "*"
-  peerDependenciesMeta:
-    react-native-svg:
-      optional: true
-  checksum: 680f7be35078892a29999013b24e36aae10c3529e4cdd2c1436573603864c45010445d6069969d7f76e4642c54584a3b941b8c944189273c3ac5b705156ad23b
   languageName: node
   linkType: hard
 
@@ -5493,10 +5482,10 @@ __metadata:
     eslint-config-next: 12.3.0
     next: 12.3.0
     react: 18.2.0
+    react-audio-player: ^0.17.0
     react-device-detect: ^2.2.2
     react-dom: 18.2.0
     react-photo-album: ^2.0.3
-    react-qr-code: ^2.0.11
     react-scroll-parallax: ^3.3.1
     sass: ^1.54.9
     typescript: 4.8.3

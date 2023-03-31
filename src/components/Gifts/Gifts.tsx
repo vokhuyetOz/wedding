@@ -1,8 +1,6 @@
 import { FC } from "react";
-import QRCode from "react-qr-code";
 
 import styles from "./Gifts.module.scss";
-import { usePlatform } from "../../hooks/usePlatform";
 import Image from "next/image";
 
 type BankProps = {

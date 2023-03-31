@@ -11,6 +11,7 @@ import {
   Countdown,
   Layout,
   NavBar,
+  Music,
 } from "../src/components";
 import { ParallaxProvider } from "react-scroll-parallax";
 import styles from "../styles/Home.module.css";
@@ -46,6 +47,7 @@ const Home: NextPage = () => {
           {/* <Hashtag /> */}
           <Gifts />
           <Footer />
+          <Music />
         </Layout>
       </ParallaxProvider>
     </div>
