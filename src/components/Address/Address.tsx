@@ -38,6 +38,9 @@ export const Address = () => {
   return (
     <div className={styles.container} id="address">
       <MapEvent />
+      <span className={styles.subtitle}>
+        Hand in hand You and me Today Tomorrow Forever 💕
+      </span>
       <MapChurch />
       <div
         style={{

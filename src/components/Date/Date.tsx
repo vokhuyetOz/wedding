@@ -8,6 +8,9 @@ const Content = () => {
       <div className={styles.dateContainer}>
         <span style={{ fontFamily: "kba", fontSize: "10vw" }}>09/04/2022</span>
       </div>
+      <div className={styles.dateContainer}>
+        <span style={{ fontFamily: "kba", fontSize: "10vw" }}>13:00</span>
+      </div>
       <span className={styles.subtitle}>party whole day</span>
     </>
   );

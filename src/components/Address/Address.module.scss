@@ -15,3 +15,14 @@
     margin: 0 0 13px 13px;
     margin-bottom: 13px;
 }
+.subtitle {
+    font-family: 'Noto';
+    color: $font;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 41px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
